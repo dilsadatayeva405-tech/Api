@@ -10,7 +10,7 @@ let currency2 = "USD";
 
 let rates = {};
 
-fetch("https://api.exchangerate.host/live?access_key=80e5abe75f87876119b6abc60f5060b6")
+fetch("https://api.exchangerate.host/live?access_key=3169cc6c72157b156967661636180dbb")
     .then((response) => response.json())
     .then((data) => {
         rates = data.quotes;
@@ -168,3 +168,4 @@ function baglantiniYoxla() {
 window.addEventListener('offline', baglantiniYoxla);
 window.addEventListener('online', baglantiniYoxla);
 baglantiniYoxla();
+
