@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+.all {
+    background-color: #F5F5F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 89px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.logo {
+    width: 120px;
+}
+.bank{
+    color: black;
+}
+ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 0;
+}
+
+ul li  {
+    list-style-type: none;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+ul li:hover:not(:first-child) {
+    color: #333;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #f9f9f9;
+}
+
+.text {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 288px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.all-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 300px;
+    padding: 0 100px;
+    margin-left: 188px;
+}
+
+.container1,
+.container2 {
+
+    max-width: 263px;
+}
+
+.text1,
+.text2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #999;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+.input1,
+.input2 {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+}
+
+.valyuta1,
+.valyuta2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E5E5E5;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.valyuta1:first-child,
+.valyuta2:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.valyuta1:last-child,
+.valyuta2:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.rub1{
+       background-color: #7B3FF2;
+       color: white;
+}
+
+.usd2{
+       background-color: #7B3FF2;
+       color: white;
+}
+
+.card1,
+.card2 {
+    border: 1px solid #E5E5E5;
+    background-color: white;
+    border-radius: 6px;
+    padding: 25px;
+}
+
+.card1 input,
+.card2 input {
+    border: none;
+    outline: none;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    width: 100%;
+    margin-bottom: 15px;
+   
+}
+
+.card1 p,
+.card2 p {
+    font-size: 13px;
+    color: #999;
+    margin: 0;
+}
+
+
+@media (max-width: 1023px) {
+    .all {
+        padding: 15px 40px;
+    }
+
+    ul {
+        gap: 40px;
+    }
+
+    .text {
+        font-size: 30px;
+        margin-left: 100px;
+        margin-top: 60px;
+    }
+
+    .all-container {
+        gap: 150px;
+        margin-left: 100px;
+        padding: 0 50px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .all {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    ul li {
+        font-size: 13px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .text {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .all-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .container1,
+    .container2 {
+        max-width: 100%;
+    }
+
+    .input1,
+    .input2 {
+        flex-wrap: wrap;
+    }
+
+    .valyuta1,
+    .valyuta2 {
+        width: calc(50% - 1px);
+    }
+
+    .valyuta1:first-child,
+    .valyuta2:first-child {
+        border-radius: 4px 0 0 0;
+    }
+
+    .valyuta1:nth-child(2),
+    .valyuta2:nth-child(2) {
+        border-radius: 0 4px 0 0;
+    }
+
+    .valyuta1:nth-child(3),
+    .valyuta2:nth-child(3) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .valyuta1:last-child,
+    .valyuta2:last-child {
+        border-radius: 0 0 4px 0;
+    }
+
+    .card1 input,
+    .card2 input {
+        font-size: 28px;
+    }
+}
+
+.internet {
+    display: none;     
+    position: fixed;    
+    bottom: 10px;      
+    left: 50%;         
+    padding: 10px 20px; 
+    background: red;    
+    color: white;       
+    font-weight: bold;  
+    border-radius: 5px; 
+    z-index: 1000;      
+}
