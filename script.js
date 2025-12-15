@@ -10,7 +10,7 @@ let currency2 = "USD";
 
 let rates = {};
 
-fetch("https://api.exchangerate.host/live?access_key=631c5835645acffaa71b8ed68ece41b7")
+fetch("https://api.exchangerate.host/live?access_key=80e5abe75f87876119b6abc60f5060b6")
     .then((response) => response.json())
     .then((data) => {
         rates = data.quotes;
